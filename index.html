@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PLAZA HOTEL</title>
+</head>
+
+<body>
+    <nav class="navbar bg-danger">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar mb-10 h1">PLAZA HOTEL</span>
+        </div>
+    </nav>
+    <br>
+    <nav class="navbar bg-light">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">RESERVAS PLAZA HOTEL</a>
+        </div>
+    </nav>
+    <br>
+    <section class="container">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th class="table-dark">Nome do hóspede</th>
+                    <th class="table-dark">Número do quarto</th>
+                    <th class="table-dark">Check-in</th>
+                    <th class="table-dark">Check-out</th>
+                    <th class="table-dark">status</th>
+                </tr>
+            </thead>
+            <tbody id="reservas">
+                <tr class="reserva">
+                    <td class="nome">Thomas</td>
+                    <td class="quarto">002</td>
+                    <td class="in">12/01/2023</td>
+                    <td class="out">19/01/2023</td>
+                    <td class="status">R$700,00</td>
+                </tr>
+                <tr class="reserva">
+                    <td class="nome">Julia</td>
+                    <td class="quarto">025</td>
+                    <td class="in">13/01/2023</td>
+                    <td class="out">14/01/2023</td>
+                    <td class="status">R$250,00</td>
+                </tr>
+                <tr class="reserva">
+                    <td class="nome">Gustavo</td>
+                    <td class="quarto">040</td>
+                    <td class="in">12/02/2023</td>
+                    <td class="out">15/02/2023</td>
+                    <td class="status">R$380,00</td>
+                </tr>
+                <tr class="reserva">
+                    <td class="nome">Joana</td>
+                    <td class="quarto">058</td>
+                    <td class="in">23/03/2023</td>
+                    <td class="out">28/03/2023</td>
+                    <td class="status">R$570,00</td>
+                </tr>
+                <tr class="reserva">
+                    <td class="nome">Lucas</td>
+                    <td class="quarto">075</td>
+                    <td class="in">31/03/2023</td>
+                    <td class="out">07/04/2023</td>
+                    <td class="status">R$789,00</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </section>
+    <section class="container">
+        <ul id="mensagens-erro"></ul>
+        <nav class="navbar bg-light">
+            <div class="container-fluid justify-content-center">
+                <span class="navbar h3">NOVAS RESERVAS</span>
+            </div>
+        </nav>
+        <br>
+        <form class="row g-1 needs-validation" class="adiciona-reserva">
+            <div class="col-md-6" class="junto">
+                <label for="nome">Nome</label>
+                <input type="text" class="espaço espaço-medio" id="nome" placeholder="Digite o seu nome" name="nome">
+            </div>
+            <div class="col-md-2" class="junto">
+                <label for="quarto">Número do quarto</label>
+                <input type="text" class="espaço espaço-medio" id="quarto" placeholder="Digite um quarto" name="quarto">
+            </div>
+            <div class="col-md-2" class="junto">
+                <label for="check-in">Check-in</label>
+                <input type="text" class="espaço espaço-medio" id="in" placeholder="data de entrada" name="in">
+            </div>
+            <div class="col-md-2" class="junto">
+                <label for="check-out">Check-out</label>
+                <input type="text" class="espaço espaço-medio" id="out" placeholder="data de saída" name="out">
+            </div>
+            <div class="col-md-2" class="junto">
+                <label for="status">Status</label>
+                <input type="text" class="espaço espaço-medio" id="status" placeholder="confirmação" name="status">
+            </div>
+            <br>
+            <button class="btn btn-danger" id="adiciona-reservas" type="button">Pesquisar</button>
+        </form>
+    </section>
+    <br>
+    <script src="/assets/js/adicionareserva.js"></script>
+    <script src="/assets/js/removereserva.js"></script>
+</body>
+
+</html>
