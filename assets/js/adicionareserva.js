@@ -1,7 +1,7 @@
-let AdicionaReserva = document.querySelector('#adiciona-reservas')
-AdicionaReserva.addEventListener('click', function (evento) {
+let adicionaReserva = document.querySelector('#adiciona-reservas')
+adicionaReserva.addEventListener('click', function (evento) {
 
-    evento.preventDefault()
+    evento.preventDefault(evento)
 
     let form = document.querySelector('#adiciona-reserva')
 
@@ -9,6 +9,7 @@ AdicionaReserva.addEventListener('click', function (evento) {
 
     adicionaReservaNaTabela(reserva)
 
+    alert('oi')
 
 })
 
